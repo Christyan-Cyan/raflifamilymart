@@ -85,11 +85,11 @@ export default function Header({ secondaryFont }) {
         <div className="hidden lg:flex flex-col border-b border-white border-opacity-20 pb-4">
           <div className="flex gap-6">
             {socialLinks.map((item, index) => (
-              <Link className="flex-row text-2xl my-auto" key={index} href={item.link}>
+              <Link className="flex-row text-xl my-auto" key={index} href={item.link}>
                 {item.icon}
               </Link>
             ))}
-            <div className={`${secondaryFont} flex flex-row text-sm gap-12 ml-auto`}>
+            <div className={`${secondaryFont} flex flex-row text-xs gap-12 ml-auto`}>
               <div className="flex-col">
                 <p>Send us a message</p>
                 <Link href="/" className="underline opacity-60 hover:opacity-100">rafli.familymart@gmail.com</Link>
@@ -125,7 +125,7 @@ export default function Header({ secondaryFont }) {
                   <li key={index}>
                     <Link
                       href={item.link}
-                      className={`text-2xl font-semibold ${
+                      className={`text-xl font-semibold ${
                         activeSection === item.link.slice(1)
                           ? 'text-[#F6AE00]' 
                           : 'text-white hover:text-[#F6AE00]'
@@ -154,7 +154,7 @@ export default function Header({ secondaryFont }) {
                 />
               </div>
               <div className="flex flex-col">
-                <h1 className="text-sm md:text-xl font-bold mb-2">RAFLI.FAMILYMART</h1>
+                <h1 className="text-sm md:text-lg font-bold mb-1">RAFLI.FAMILYMART</h1>
                 <p className="max-w-48 md:max-w-none text-xs font-light">Kemudahan Belanja, Kenyamanan Keluarga</p>
               </div>
             </div>

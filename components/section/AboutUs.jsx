@@ -18,8 +18,8 @@ const AboutUs = () => {
       </div>
       <div className="col-span-12 lg:col-span-7 text-center lg:text-left my-auto">
         <span className="text-xs md:text-base text-[#F6AE00] font-bold uppercase tracking-[.25em]">About us</span>
-        <h1 className="text-2xl md:text-4xl font-bold mb-4 lg:mb-8 mt-3">Temukan beragam produk kebutuhan untuk keluarga Anda di Rafli.FamilyMart</h1>
-        <p className="text-sm md:text-lg font-light mb-8">
+        <h1 className="text-2xl md:text-3xl font-bold mb-4 lg:mb-8 mt-3">Temukan beragam produk kebutuhan untuk keluarga Anda di Rafli.FamilyMart</h1>
+        <p className="text-sm md:text-base font-light mb-8">
           RafliFamily Mart adalah platform pihak ketiga yang menghubungkan keluarga dengan berbagai produk berkualitas.
           Kami hadir untuk memudahkan menemukan pilihan terbaik dari berbagai merek terkemuka yang aman, nyaman, dan sesuai dengan kebutuhan keluarga Anda.
           Sebagai mitra andal, RafliFamily Mart memastikan setiap produk yang kami tawarkan telah melalui seleksi dan memenuhi standar keamanan dan kualitas yang terpercaya.
