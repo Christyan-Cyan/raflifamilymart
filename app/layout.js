@@ -1,15 +1,16 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat, Inter } from "next/font/google";
 import "./globals.css";
+import Header from "../components/Header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+export const fontMontserrat = Montserrat ({
   subsets: ["latin"],
-});
+  display: "swap",
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+export const fontInter = Inter ({
   subsets: ["latin"],
-});
+  display: "swap",
+})
 
 export const metadata = {
   title: "Create Next App",
@@ -19,9 +20,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${fontMontserrat.className} transition scroll-smooth duration-300`}>
+        <Header secondaryFont={`${fontInter.className}`} />
         {children}
       </body>
     </html>
