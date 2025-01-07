@@ -5,7 +5,7 @@ const Goals = () => {
   return (
     <section
       id="goals"
-      className="mt-28 px-4 md:px-8 lg:px-16"
+      className="mt-36 px-4 md:px-8 lg:px-16 scroll-mt-24 lg:scroll-mt-68"
     >
       <div className="grid grid-cols-12 gap-8">
         <div className="col-span-12 lg:col-span-5 my-auto">
@@ -23,29 +23,29 @@ const Goals = () => {
           <p className="text-sm md:text-lg font-light mb-8">
             Kami berkomitmen menjadi solusi utama untuk memenuhi kebutuhan keluarga dengan menyediakan pengalaman belanja yang praktis, terpercaya, dan membawa manfaat nyata, demi mendukung kenyamanan dan kebahagiaan keluarga.
           </p>
-          <div className="grid grid-cols-12 gap-4 lg:gap-8">
-            <div className="col-span-6 bg-[#1B1D22] text-center rounded-xl p-4">
+          <div className="grid grid-cols-12 gap-4 lg:gap-6">
+            <div className="col-span-6 bg-[#1B1D22] text-center rounded-xl p-8">
               <div className="inline-block bg-[#33373F] text-[#F6AE00] text-2xl rounded-2xl p-4 mb-2">
                 <IoCart />
               </div>
               <h3 className="text-base font-semibold mb-2">Menyediakan Produk Berkualitas</h3>
               <p className="text-xs font-extralight">Kami menyediakan berbagai produk keluarga dari merek ternama yang telah memenuhi standar keamanan dan kualitas terpercaya.</p>
             </div>
-            <div className="col-span-6 bg-[#1B1D22] text-center rounded-xl p-4">
+            <div className="col-span-6 bg-[#1B1D22] text-center rounded-xl p-8">
               <div className="inline-block bg-[#33373F] text-[#F6AE00] text-2xl rounded-2xl p-4 mb-2">
                 <IoCart />
               </div>
               <h3 className="text-base font-semibold mb-2">Menyediakan Produk Berkualitas</h3>
               <p className="text-xs font-extralight">Kami menyediakan berbagai produk keluarga dari merek ternama yang telah memenuhi standar keamanan dan kualitas terpercaya.</p>
             </div>
-            <div className="col-span-6 bg-[#1B1D22] text-center rounded-xl p-4">
+            <div className="col-span-6 bg-[#1B1D22] text-center rounded-xl p-8">
               <div className="inline-block bg-[#33373F] text-[#F6AE00] text-2xl rounded-2xl p-4 mb-2">
                 <IoCart />
               </div>
               <h3 className="text-base font-semibold mb-2">Menyediakan Produk Berkualitas</h3>
               <p className="text-xs font-extralight">Kami menyediakan berbagai produk keluarga dari merek ternama yang telah memenuhi standar keamanan dan kualitas terpercaya.</p>
             </div>
-            <div className="col-span-6 bg-[#1B1D22] text-center rounded-xl p-4">
+            <div className="col-span-6 bg-[#1B1D22] text-center rounded-xl p-8">
               <div className="inline-block bg-[#33373F] text-[#F6AE00] text-2xl rounded-2xl p-4 mb-2">
                 <IoCart />
               </div>

@@ -16,16 +16,17 @@ const socialLinks = [
 ]
 
 const navigation = [
-  { label: "Beranda", link: "#home" },
+  { label: "Beranda", link: "/" },
   { label: "Tentang kami", link: "#about-us" },
   { label: "Kategori produk", link: "#product-categories" },
+  { label: 'Goals', link: "#goals" },
   { label: "Partnership", link: "#partnership" },
   { label: "Kontak", link: "#contact-us" }
 ]
 
 export default function Header({ secondaryFont }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState('home')
+  const [activeSection, setActiveSection] = useState('/')
   const [isNavFixed, setNavFixed] = useState(false);
 
   const toggleMenu = () => {
@@ -50,11 +51,11 @@ export default function Header({ secondaryFont }) {
       sections.forEach(section => {
         const sectionTop = section.offsetTop
         const sectionHeight = section.offsetHeight
-        if (window.scrollY >= sectionTop - sectionHeight / 3 - 240) {
+        if (window.scrollY >= sectionTop - sectionHeight / 3 - 200) {
           currentSection = section.getAttribute('id')
         }
       })
-      setActiveSection(currentSection || 'home')
+      setActiveSection(currentSection || '/')
     }
     handleScroll()
 
@@ -85,7 +86,7 @@ export default function Header({ secondaryFont }) {
         <div className="hidden lg:flex flex-col border-b border-white border-opacity-20 pb-4">
           <div className="flex gap-6">
             {socialLinks.map((item, index) => (
-              <Link className="flex-row text-xl my-auto" key={index} href={item.link}>
+              <Link className="flex-row text-xl my-auto" key={index} href={`https://${item.link}`}>
                 {item.icon}
               </Link>
             ))}
@@ -150,12 +151,12 @@ export default function Header({ secondaryFont }) {
                   width={630}
                   height={569}
                   alt="Logo RafliFamily Mart"
-                  className="w-full h-10 md:h-12"
+                  className="w-full h-10 md:h-8"
                 />
               </div>
-              <div className="flex flex-col">
-                <h1 className="text-sm md:text-lg font-bold mb-1">RAFLI.FAMILYMART</h1>
-                <p className="max-w-48 md:max-w-none text-xs font-light">Kemudahan Belanja, Kenyamanan Keluarga</p>
+              <div className="flex flex-col text-xs">
+                <h1 className="font-bold mb-1">RAFLI.FAMILYMART</h1>
+                <p className="max-w-48 md:max-w-none font-light">Kemudahan Belanja, Kenyamanan Keluarga</p>
               </div>
             </div>
           </Link>
@@ -165,7 +166,7 @@ export default function Header({ secondaryFont }) {
                 <li key={index}>
                   <Link
                     href={item.link}
-                    className={`font-semibold hover:text-[#F6AE00] 
+                    className={`text-sm font-medium hover:text-[#F6AE00] 
                     ${activeSection === item.link.slice(1) ? 'text-[#F6AE00]' : 'text-white hover:text-[#F6AE00]'}`}
                   >
                     {item.label}

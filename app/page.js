@@ -8,6 +8,9 @@ import Hero from "@/components/section/Hero";
 import AboutUs from "@/components/section/AboutUs";
 import ProductCategories from "@/components/section/ProductCategories"
 import Goals from "@/components/section/Goals";
+import Partnership from "@/components/section/Partnership";
+import Testimonial from "@/components/section/Testimonial";
+import Contact from "@/components/section/Contact"
 
 import CardFeature from "../components/CardFeature";
 
@@ -39,6 +42,12 @@ export default function Home() {
       <ProductCategories />
 
       <Goals />
+
+      <Partnership />
+
+      <Testimonial />
+
+      <Contact />
 
     </>
   );
