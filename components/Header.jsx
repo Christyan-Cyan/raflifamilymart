@@ -16,7 +16,7 @@ const socialLinks = [
 ]
 
 const navigation = [
-  { label: "Beranda", link: "/" },
+  { label: "Beranda", link: "#home" },
   { label: "Tentang kami", link: "#about-us" },
   { label: "Kategori produk", link: "#product-categories" },
   { label: 'Goals', link: "#goals" },
@@ -26,7 +26,7 @@ const navigation = [
 
 export default function Header({ secondaryFont }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState('/')
+  const [activeSection, setActiveSection] = useState('home')
   const [isNavFixed, setNavFixed] = useState(false);
 
   const toggleMenu = () => {
@@ -55,7 +55,7 @@ export default function Header({ secondaryFont }) {
           currentSection = section.getAttribute('id')
         }
       })
-      setActiveSection(currentSection || '/')
+      setActiveSection(currentSection || 'home')
     }
     handleScroll()
 
@@ -147,7 +147,7 @@ export default function Header({ secondaryFont }) {
             <div className="flex flex-row gap-3">
               <div className="my-auto">
                 <Image
-                  src="/assets/image/logo.png"
+                  src="/assets/image/logo/logo-rfm.png"
                   width={630}
                   height={569}
                   alt="Logo RafliFamily Mart"

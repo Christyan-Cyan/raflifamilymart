@@ -1,6 +1,7 @@
 import { Montserrat, Inter } from "next/font/google";
 import "./globals.css";
-import Header from "../components/Header";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const fontMontserrat = Montserrat ({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
       <body className={`${fontMontserrat.className} transition scroll-smooth duration-300`}>
         <Header secondaryFont={`${fontInter.className}`} />
         {children}
+        <Footer />
       </body>
     </html>
   );

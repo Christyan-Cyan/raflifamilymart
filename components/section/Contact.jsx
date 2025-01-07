@@ -1,15 +1,59 @@
+import Image from "next/image";
+import Link from "next/link";
+
+const listContact = [
+  {
+    logo: "/assets/image/logo/logo-whatsapp.png",
+    label: "Whatsapp",
+    account: "+62 878 8748 8113",
+    url: "https://www.whatsapp.com"
+  },
+  {
+    logo: "/assets/image/logo/logo-instagram.png",
+    label: "Instagram",
+    account: "@el_adzani",
+    url: "https://www.instagram.com"
+  },
+  {
+    logo: "/assets/image/logo/logo-tiktok.png",
+    label: "Tiktok",
+    account: "@rafli.familymart",
+    url: "https://www.tiktok.com"
+  },
+  {
+    logo: "/assets/image/logo/logo-shopee.png",
+    label: "Shopee",
+    account: "Rafli.FamilyMart",
+    url: "https://www.shopee.com"
+  }
+]
+
 const Contact = () => {
   return (
     <section
       id="contact-us"
-      className="px-4 md:px-8 lg:px-16 mt-96 lg:mt-64 scroll-mt-24 lg:scroll-mt-64"
+      className="mt-36 px-4 md:px-8 lg:px-16 scroll-mt-24 lg:scroll-mt-64"
       >
       <div className="text-center">
         <span className="text-xs md:text-base text-[#F6AE00] font-bold uppercase tracking-[.25em]">Our contact</span>
         <h1 className="text-2xl md:text-3xl font-bold mb-4 lg:mb-8 mt-3">Informasi dan Kontak Kami</h1>
       </div>
-      <div className="grid grid-cols-12 gap-8 mt-12">
-
+      <div className="grid grid-cols-12 gap-4 lg:gap-12 mt-12">
+        {listContact.map((contact, index) => (
+          <div key={index} className="col-span-6 md:col-span-3 bg-[#161A22] text-center rounded-xl p-6">
+            <Link href={contact.url}>
+              <Image
+                src={contact.logo}
+                width={240}
+                height={240}
+                alt={`logo-${contact.label}`}
+                className="mx-auto px-6 pb-4"
+              />
+              <h1 className="text-lg font-semibold">{contact.label}</h1>
+              <span className="font-light">{contact.account}</span>
+            </Link>
+          </div>
+        ))}
       </div>
     </section>
   )

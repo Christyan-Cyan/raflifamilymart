@@ -11,6 +11,7 @@ import Goals from "@/components/section/Goals";
 import Partnership from "@/components/section/Partnership";
 import Testimonial from "@/components/section/Testimonial";
 import Contact from "@/components/section/Contact"
+import FAQ from "@/components/section/FAQ";
 
 import CardFeature from "../components/CardFeature";
 
@@ -48,6 +49,8 @@ export default function Home() {
       <Testimonial />
 
       <Contact />
+
+      <FAQ />
 
     </>
   );

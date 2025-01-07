@@ -3,6 +3,9 @@
 import Link from "next/link";
 import { useState } from "react";
 
+import { FaArrowsRotate } from "react-icons/fa6";
+import { IoArrowForwardCircleOutline } from "react-icons/io5";
+
 export default function CardCategory ({title, details}) {
   const [isFlipped, setFlipped] = useState(false);
 
@@ -15,36 +18,46 @@ export default function CardCategory ({title, details}) {
   }
   return (
     <>
-      <div className='min-h-full perspective-1000 w-full h-[400px]'>
+      <div className='min-h-full perspective-1000 w-full h-96'>
         <div className={`relative w-full h-full transition-transform duration-300 transform-style-3d ${isFlipped ? 'rotate-y-180' : ''}`}>
 
           {/* Front Side */}
           <div className="absolute w-full h-full backface-hidden rounded-xl">
             <div
-              className="relative flex h-full bg-cover bg-no-repeat rounded-xl p-6"
+              className="relative flex h-full bg-cover bg-no-repeat rounded-xl p-9"
               style={{ backgroundImage: `url("/assets/image/product-category-1.png")` }}
             >
               <div className="absolute inset-0 bg-black bg-opacity-35 rounded-xl"></div>
               <div className="relative flex flex-col justify-between w-full h-full">
                 <div className="flex items-center">
-                  <h2 className="text-xl font-bold">{title}</h2>
-                  <button onClick={handleClick} className="ml-auto">Click Me</button>
+                  <h2 className="text-xl font-bold max-w-8">{title}</h2>
+                  <button onClick={handleClick} className="text-lg ml-auto">
+                    <FaArrowsRotate />
+                  </button>
                 </div>
-                <Link className="mt-auto text-blue-500" href="">Read More</Link>
+                <Link className="flex flex-row gap-2 text-sm mt-auto" href="">
+                  Read More
+                  <IoArrowForwardCircleOutline className="text-lg my-auto" />
+                </Link>
               </div>
             </div>
           </div>
 
           {/* Back Side */}
-          <div className="bg-white text-black absolute w-full h-full backface-hidden rounded-xl rotate-y-180">
+          <div className="bg-[#161A22] text-white absolute w-full h-full backface-hidden rounded-xl rotate-y-180">
             <div className="relative flex h-full object-cover rounded-xl p-6">
               <div className="relative flex flex-col justify-between w-full h-full p-4">
                 <div className="flex items-center">
-                  <h2 className="text-xl font-bold">{title}</h2>
-                  <button onClick={handleClick} className="ml-auto">Click Me</button>
+                  <h2 className="text-xl font-bold max-w-8">{title}</h2>
+                  <button onClick={handleClick} className="text-lg ml-auto">
+                    <FaArrowsRotate />
+                  </button>
                 </div>
-                <p className="my-auto text-gray-700">{details}</p>
-                <Link className="mt-auto text-blue-500" href="">Read More</Link>
+                <p className="text-sm lg:text-base my-auto">{details}</p>
+                <Link className="flex flex-row gap-2 text-sm mt-auto" href="">
+                  Read More
+                  <IoArrowForwardCircleOutline className="text-lg my-auto" />
+                </Link>
               </div>
             </div>
           </div>
