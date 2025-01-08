@@ -15,11 +15,11 @@ export default function Accordion({ data }) {
       {data.map((item, index) => (
         <div key={index} className="bg-[#161A22] rounded-xl mb-4">
           <button
-            className="flex w-full justify-between py-4 px-5 text-left"
+            className="flex gap-4 w-full justify-between py-4 px-5 text-left"
             onClick={() => handleAccordionClick(index)}
           >
             <span className="my-auto">{item.question}</span>
-            <div className="bg-[#23262D] text-[#F6AE00] rounded-full p-2">
+            <div className="bg-[#23262D] text-[#F6AE00] rounded-full my-auto p-2">
               <IoIosArrowForward
                 className={`h-5 w-5 transition-transform duration-200 ${
                   activeIndex === index ? "rotate-90" : ""

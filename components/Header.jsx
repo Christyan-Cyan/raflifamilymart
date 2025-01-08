@@ -175,14 +175,16 @@ export default function Header({ secondaryFont }) {
               ))}
             </ul>
           </div>
-          <div className="block lg:hidden ml-auto">
+
+          <div className="block lg:hidden ml-auto my-auto">
             <button
               onClick={toggleMenu}
-              className="text-2xl bg-transparent border border-white rounded-lg p-2 lg:p-4"
+              className="text-2xl bg-transparent border border-white rounded-lg py-2 px-3 md:py-4 md:px-6"
             >
               <HiOutlineBars3BottomRight />
             </button>
           </div>
+
         </nav>
       </header>
     </>

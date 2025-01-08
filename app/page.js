@@ -70,34 +70,14 @@ export default function Home() {
             <div className="col-span-12 lg:col-span-5 my-auto lg:ml-auto">
               <Image
                 src="/assets/image/qr-support.png"
-                width={300}
-                height={300}
+                width={400}
+                height={400}
                 alt="QR Support"
-                className="bg-[#161A22] m-auto rounded-xl p-6 shadow-2xl"
+                className="m-auto p-4"
               />
             </div>
           </div>
         </div>
-
-        {/*<div className="grid grid-cols-12 gap-4 text-center lg:text-left lg:gap-8">*/}
-        {/*  <div className="col-span-12 lg:col-span-7">*/}
-        {/*    <span className="text-xs md:text-base text-[#F6AE00] font-bold uppercase tracking-[.25em]">Support us</span>*/}
-        {/*    <h1 className="text-2xl md:text-3xl font-bold mb-4 lg:mb-8 mt-3">Traktir kopi</h1>*/}
-        {/*    <p className="text-sm md:text-lg text-justify lg:text-left font-light mb-8">*/}
-        {/*      Traktirin kita kopi yuk! Dengan donasi secangkir kopi, kamu nggak cuma bikin kita semangat terus berkarya, tapi juga jadi bagian dari perjalanan seru ini. Setiap tegukan kopi dari kamu adalah dukungan besar buat ide-ide baru, konten seru, dan energi positif yang terus mengalir.*/}
-        {/*      Terima kasih sudah jadi bagian dari cerita ini!*/}
-        {/*    </p>*/}
-        {/*  </div>*/}
-        {/*  <div className="col-span-12 lg:col-span-5 my-auto ml-auto">*/}
-        {/*    <Image*/}
-        {/*      src="/assets/image/qr-support.png"*/}
-        {/*      width={280}*/}
-        {/*      height={280}*/}
-        {/*      alt="QR support"*/}
-        {/*      className="bg-[#161A22] m-auto rounded-xl p-8"*/}
-        {/*    />*/}
-        {/*  </div>*/}
-        {/*</div>*/}
       </section>
 
       <FAQ />
