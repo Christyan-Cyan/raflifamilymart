@@ -1,14 +1,25 @@
 import Image from "next/image";
-import { FaStar } from "react-icons/fa";
+import { FaStar, FaRegStar } from "react-icons/fa";
 
-const CardTestimonial = () => {
+const Rating = ({ rating }) => {
+  return (
+    <div className="flex flex-row gap-2 ml-auto my-auto">
+      {[...Array(rating)].map((_, index) => (
+        <FaStar key={index} className="text-[#F6AE00]" />
+      ))}
+      {[...Array(5 - rating)].map((_, index) => (
+        <FaRegStar key={index} className="text-[#F6AE00]" />
+      ))}
+    </div>
+  )
+}
+
+const CardTestimonial = ({ name, review, rating }) => {
   return (
     <>
-      <div className="bg-[#161A22] rounded-2xl p-8">
-        <p className="text-justify text-sm">Belanja kebutuhan di Rafli.FamilyMart benar-benar memudahkan saya untuk memenuhi kebutuhan keluarga.
-          Produknya lengkap, harganya terjangkau, dan kualitasnya tidak perlu diragukan lagi.
-          Sekarang, saya bisa belanja dengan nyaman dari rumah tanpa harus repot keluar.
-          Pelayanan pelanggannya juga sangat responsif dan ramah!
+      <div className="bg-[#161A22] rounded-2xl min-h-full p-8">
+        <p className="text-justify text-sm">
+          {review}
         </p>
 
         <div className="flex flex-row mt-6">
@@ -19,14 +30,8 @@ const CardTestimonial = () => {
             alt="Testimonial user"
             className="max-w-10"
           />
-          <h1 className="text-medium text-sm ml-4 my-auto">Budiono siregar</h1>
-          <div className="flex flex-row gap-2 ml-auto my-auto">
-            <FaStar className="text-[#F6AE00]" />
-            <FaStar className="text-[#F6AE00]" />
-            <FaStar className="text-[#F6AE00]" />
-            <FaStar className="text-[#F6AE00]" />
-            <FaStar className="text-[#F6AE00]" />
-          </div>
+          <h1 className="text-medium text-sm ml-4 my-auto">{name}</h1>
+          <Rating rating={rating} />
         </div>
       </div>
     </>

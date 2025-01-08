@@ -16,12 +16,16 @@ const Hero = () => {
           Belanja Praktis, Semua Kebutuhan Keluarga dalam Genggaman.
         </p>
         <div className="flex flex-col md:flex-row gap-4 lg:gap-8 text-lg font-semibold px-0 md:px-12 lg:px-32 pt-12">
-          <button className="w-full bg-[#F6AE00] text-white rounded-xl py-4">
-            <Link href="/">Belanja sekarang</Link>
-          </button>
-          <button className="w-full bg-transparent text-[#F6AE00] border-2 border-[#F6AE00] rounded-xl py-4">
-            <Link href="/">Lihat Selengkapnya</Link>
-          </button>
+          <Link className="w-full" href="https://collshp.com/ahmadrafli">
+            <button className="w-full bg-[#F6AE00] text-white rounded-xl py-4">
+              Belanja sekarang
+            </button>
+          </Link>
+          <Link className="w-full" href="#about-us">
+            <button className="w-full bg-transparent text-[#F6AE00] border-2 border-[#F6AE00] rounded-xl py-4">
+              Lihat Selengkapnya
+            </button>
+          </Link>
         </div>
       </div>
     </section>

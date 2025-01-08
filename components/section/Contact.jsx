@@ -6,25 +6,25 @@ const listContact = [
     logo: "/assets/image/logo/logo-whatsapp.png",
     label: "Whatsapp",
     account: "+62 878 8748 8113",
-    url: "https://www.whatsapp.com"
+    url: "https://wa.me/6287887488113?text=Halo%20Rafli%20Family%20Mart!%20Saya%20ingin%20bertanya%20mengenai%20produk%20dan%20layanan%20yang%20tersedia"
   },
   {
     logo: "/assets/image/logo/logo-instagram.png",
     label: "Instagram",
     account: "@el_adzani",
-    url: "https://www.instagram.com"
+    url: "https://www.instagram.com/el_adzani/"
   },
   {
     logo: "/assets/image/logo/logo-tiktok.png",
     label: "Tiktok",
     account: "@rafli.familymart",
-    url: "https://www.tiktok.com"
+    url: "https://www.tiktok.com/@rafli.familymart"
   },
   {
     logo: "/assets/image/logo/logo-shopee.png",
     label: "Shopee",
     account: "Rafli.FamilyMart",
-    url: "https://www.shopee.com"
+    url: "https://collshp.com/ahmadrafli"
   }
 ]
 

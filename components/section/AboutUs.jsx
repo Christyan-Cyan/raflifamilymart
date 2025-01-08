@@ -25,9 +25,11 @@ const AboutUs = () => {
           Sebagai mitra andal, RafliFamily Mart memastikan setiap produk yang kami tawarkan telah melalui seleksi dan memenuhi standar keamanan dan kualitas yang terpercaya.
           Dengan fokus pada kemudahan, kami menjadi jembatan antara keluarga dan solusi terbaik untuk kesejahteraan sehari-hari.
         </p>
-        <button className="bg-[#F6AE00] text-white rounded-xl py-3 lg:py-4 px-9 lg:px-12">
-          <Link className="text-sm lg:text-base font-semibold" href="/">Jelajahi Produk</Link>
-        </button>
+        <Link className="text-sm lg:text-base font-semibold" href="#product-categories">
+          <button className="bg-[#F6AE00] text-white rounded-xl py-3 lg:py-4 px-9 lg:px-12">
+            Jelajahi Produk
+          </button>
+        </Link>
       </div>
     </section>
   )

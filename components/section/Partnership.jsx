@@ -14,9 +14,11 @@ const Partnership = () => {
           <p className="text-sm md:text-lg text-justify lg:text-left font-light mb-8">
             Rafli.Family Mart menjalin kemitraan dengan Rafyangar IT Solution dan Ulasan Pendidikan untuk  memberikan layanan yang lebih baik kepada keluarga Indonesia.
           </p>
-          <button className="bg-[#F6AE00] text-white rounded-xl py-3 lg:py-4 px-9 lg:px-12">
-            <Link className="text-sm lg:text-base font-semibold" href="/">Bergabung mitra</Link>
-          </button>
+          <Link className="text-sm lg:text-base font-semibold" href="https://wa.me/6287887488113?text=Halo%2C%20saya%20tertarik%20untuk%20menjadi%20mitra%20atau%20menjalin%20kerja%20sama%20dengan%20rafli.familymart.%20Mohon%20informasi%20lebih%20lanjut%20terkait%20proses%20dan%20persyaratan.%20Terima%20kasih">
+            <button className="bg-[#F6AE00] text-white rounded-xl py-3 lg:py-4 px-9 lg:px-12">
+              Bergabung mitra
+            </button>
+          </Link>
         </div>
         <div className="col-span-12 lg:col-span-7 text-center lg:text-left my-auto">
           <div className="grid grid-cols-12 gap-4">

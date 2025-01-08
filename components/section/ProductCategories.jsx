@@ -7,6 +7,59 @@ import CardCategory from "@/components/CardCategory";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+const productCategories = [
+  {
+    image: "/assets/image/product-categories/product-category-1.png",
+    title: "Peralatan Dapur",
+    details: "Temukan berbagai alat dapur praktis untuk membantu kegiatan memasak Anda menjadi lebih mudah dan menyenangkan."
+  },
+  {
+    image: "/assets/image/product-categories/product-category-2.png",
+    title: "Dekorasi Rumah",
+    details: "Hias rumah Anda dengan dekorasi cantik yang menambah kenyamanan dan keindahan setiap sudut ruangan."
+  },
+  {
+    image: "/assets/image/product-categories/product-category-3.png",
+    title: "Peralatan Kebersihan",
+    details: "Pilihan alat kebersihan berkualitas untuk menjaga rumah anda tetap bersih dan rapi setiap saat."
+  },
+  {
+    image: "/assets/image/product-categories/product-category-4.png",
+    title: "Peralatan Anak dan Bayi",
+    details: "Perlengkapan aman dan nyaman untuk mendukung tumbuh kembang anak dan kebutuhan bayi Anda."
+  },
+  {
+    image: "/assets/image/product-categories/product-category-5.png",
+    title: "Perlengkapan Kamar Mandi",
+    details: "Lengkapi kamar mandi Anda dengan berbagai perlengkapan modern dan fungsional untuk kenyamanan maksimal."
+  },
+  {
+    image: "/assets/image/product-categories/product-category-6.png",
+    title: "Perabotan Rumah Tangga",
+    details: "Pilihan perabotan praktis dan stylish yang cocok untuk melengkapi rumah Anda."
+  },
+  {
+    image: "/assets/image/product-categories/product-category-7.png",
+    title: "Alat Masak dan Baking",
+    details: "Peralatan masak dan baking berkualitas untuk menciptakan hidangan lezat di rumah."
+  },
+  {
+    image: "/assets/image/product-categories/product-category-8.png",
+    title: "Elektronik Rumah Tangga",
+    details: "Elektronik multifungsi untuk mempermudah pekerjaan rumah dan menunjang aktivitas sehari-hari."
+  },
+  {
+    image: "/assets/image/product-categories/product-category-9.png",
+    title: "Perlengkapan Rumah Tangga",
+    details: "Beragam alat rumah tangga praktis yang membantu anda dalam menyelesaikan berbagai pekerjaan rumah."
+  },
+  {
+    image: "/assets/image/product-categories/product-category-10.png",
+    title: "Kesehatan dan Kecantikan",
+    details: "Produk pilihan untuk menjaga kesehatan dan meningkatkan penampilan Anda setiap hari."
+  }
+]
+
 export default function ProductCategories () {
   const settings = {
     infinite: true,
@@ -59,30 +112,11 @@ export default function ProductCategories () {
       </div>
       <div className="slider-container">
         <Slider {...settings}>
-          <div className="px-2">
-            <CardCategory title="Peralatan dapur" details="Temukan berbagai alat dapur praktis untuk membantu kegiatan memasak Anda menjadi lebih mudah dan menyenangkan." />
-          </div>
-          <div className="px-2">
-            <CardCategory title="Peralatan dapur" details="Temukan berbagai alat dapur praktis untuk membantu kegiatan memasak Anda menjadi lebih mudah dan menyenangkan." />
-          </div>
-          <div className="px-2">
-            <CardCategory title="Peralatan dapur" details="Temukan berbagai alat dapur praktis untuk membantu kegiatan memasak Anda menjadi lebih mudah dan menyenangkan." />
-          </div>
-          <div className="px-2">
-            <CardCategory title="Peralatan dapur" details="Temukan berbagai alat dapur praktis untuk membantu kegiatan memasak Anda menjadi lebih mudah dan menyenangkan." />
-          </div>
-          <div className="px-2">
-            <CardCategory title="Peralatan dapur" details="Temukan berbagai alat dapur praktis untuk membantu kegiatan memasak Anda menjadi lebih mudah dan menyenangkan." />
-          </div>
-          <div className="px-2">
-            <CardCategory title="Peralatan dapur" details="Temukan berbagai alat dapur praktis untuk membantu kegiatan memasak Anda menjadi lebih mudah dan menyenangkan." />
-          </div>
-          <div className="px-2">
-            <CardCategory title="Peralatan dapur" details="Temukan berbagai alat dapur praktis untuk membantu kegiatan memasak Anda menjadi lebih mudah dan menyenangkan." />
-          </div>
-          <div className="px-2">
-            <CardCategory title="Peralatan dapur" details="Temukan berbagai alat dapur praktis untuk membantu kegiatan memasak Anda menjadi lebih mudah dan menyenangkan." />
-          </div>
+          {productCategories.map((category, index) => (
+            <div key={index} className="px-2">
+              <CardCategory image={category.image} title={category.title} details={category.details} />
+            </div>
+          ))}
         </Slider>
       </div>
     </section>
