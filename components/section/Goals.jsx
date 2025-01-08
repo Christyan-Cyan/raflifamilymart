@@ -24,28 +24,28 @@ const Goals = () => {
             Kami berkomitmen menjadi solusi utama untuk memenuhi kebutuhan keluarga dengan menyediakan pengalaman belanja yang praktis, terpercaya, dan membawa manfaat nyata, demi mendukung kenyamanan dan kebahagiaan keluarga.
           </p>
           <div className="grid grid-cols-12 gap-4 lg:gap-6">
-            <div className="col-span-6 bg-[#1B1D22] text-center rounded-xl p-8">
+            <div className="col-span-12 md:col-span-6 bg-[#1B1D22] text-center rounded-xl p-8">
               <div className="inline-block bg-[#33373F] text-[#F6AE00] text-2xl rounded-2xl p-4 mb-2">
                 <IoCart />
               </div>
               <h3 className="text-base font-semibold mb-2">Menyediakan Produk Berkualitas</h3>
               <p className="text-xs font-extralight">Kami menyediakan berbagai produk keluarga dari merek ternama yang telah memenuhi standar keamanan dan kualitas terpercaya.</p>
             </div>
-            <div className="col-span-6 bg-[#1B1D22] text-center rounded-xl p-8">
+            <div className="col-span-12 md:col-span-6 bg-[#1B1D22] text-center rounded-xl p-8">
               <div className="inline-block bg-[#33373F] text-[#F6AE00] text-2xl rounded-2xl p-4 mb-2">
                 <IoCart />
               </div>
               <h3 className="text-base font-semibold mb-2">Menyediakan Produk Berkualitas</h3>
               <p className="text-xs font-extralight">Kami menyediakan berbagai produk keluarga dari merek ternama yang telah memenuhi standar keamanan dan kualitas terpercaya.</p>
             </div>
-            <div className="col-span-6 bg-[#1B1D22] text-center rounded-xl p-8">
+            <div className="col-span-12 md:col-span-6 bg-[#1B1D22] text-center rounded-xl p-8">
               <div className="inline-block bg-[#33373F] text-[#F6AE00] text-2xl rounded-2xl p-4 mb-2">
                 <IoCart />
               </div>
               <h3 className="text-base font-semibold mb-2">Menyediakan Produk Berkualitas</h3>
               <p className="text-xs font-extralight">Kami menyediakan berbagai produk keluarga dari merek ternama yang telah memenuhi standar keamanan dan kualitas terpercaya.</p>
             </div>
-            <div className="col-span-6 bg-[#1B1D22] text-center rounded-xl p-8">
+            <div className="col-span-12 md:col-span-6 bg-[#1B1D22] text-center rounded-xl p-8">
               <div className="inline-block bg-[#33373F] text-[#F6AE00] text-2xl rounded-2xl p-4 mb-2">
                 <IoCart />
               </div>

@@ -59,28 +59,28 @@ export default function ProductCategories () {
       </div>
       <div className="slider-container">
         <Slider {...settings}>
-          <div className="px-2 lg:px-8">
+          <div className="px-2">
             <CardCategory title="Peralatan dapur" details="Temukan berbagai alat dapur praktis untuk membantu kegiatan memasak Anda menjadi lebih mudah dan menyenangkan." />
           </div>
-          <div className="px-2 lg:px-8">
+          <div className="px-2">
             <CardCategory title="Peralatan dapur" details="Temukan berbagai alat dapur praktis untuk membantu kegiatan memasak Anda menjadi lebih mudah dan menyenangkan." />
           </div>
-          <div className="px-2 lg:px-8">
+          <div className="px-2">
             <CardCategory title="Peralatan dapur" details="Temukan berbagai alat dapur praktis untuk membantu kegiatan memasak Anda menjadi lebih mudah dan menyenangkan." />
           </div>
-          <div className="px-2 lg:px-8">
+          <div className="px-2">
             <CardCategory title="Peralatan dapur" details="Temukan berbagai alat dapur praktis untuk membantu kegiatan memasak Anda menjadi lebih mudah dan menyenangkan." />
           </div>
-          <div className="px-2 lg:px-8">
+          <div className="px-2">
             <CardCategory title="Peralatan dapur" details="Temukan berbagai alat dapur praktis untuk membantu kegiatan memasak Anda menjadi lebih mudah dan menyenangkan." />
           </div>
-          <div className="px-2 lg:px-8">
+          <div className="px-2">
             <CardCategory title="Peralatan dapur" details="Temukan berbagai alat dapur praktis untuk membantu kegiatan memasak Anda menjadi lebih mudah dan menyenangkan." />
           </div>
-          <div className="px-2 lg:px-8">
+          <div className="px-2">
             <CardCategory title="Peralatan dapur" details="Temukan berbagai alat dapur praktis untuk membantu kegiatan memasak Anda menjadi lebih mudah dan menyenangkan." />
           </div>
-          <div className="px-2 lg:px-8">
+          <div className="px-2">
             <CardCategory title="Peralatan dapur" details="Temukan berbagai alat dapur praktis untuk membantu kegiatan memasak Anda menjadi lebih mudah dan menyenangkan." />
           </div>
         </Slider>

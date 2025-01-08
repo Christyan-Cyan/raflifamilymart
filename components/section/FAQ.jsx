@@ -1,4 +1,18 @@
+import Accordion from "@/components/Accordion"
+
 const FAQ = () => {
+  const dataFaq = [
+    { question: 'Apa itu Rafli.FamilyMart?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac congue dolor, at scelerisque massa. Aliquam erat volutpat. Phasellus ac mauris porttitor, condimentum nisl eget.' },
+    { question: 'Apakah semua produk di Rafli.FamilyMart aman untuk keluarga?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac congue dolor, at scelerisque massa. Aliquam erat volutpat. Phasellus ac mauris porttitor, condimentum nisl eget.' },
+    { question: 'Bagaimana cara memesan produk di Rafli.FamilyMart?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac congue dolor, at scelerisque massa. Aliquam erat volutpat. Phasellus ac mauris porttitor, condimentum nisl eget.' },
+    { question: 'Apa saja kategori produk yang tersedia di Rafli.FamilyMart?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac congue dolor, at scelerisque massa. Aliquam erat volutpat. Phasellus ac mauris porttitor, condimentum nisl eget.' },
+    { question: 'Apakah Rafli.FamilyMart menyediakan perlengkapan untuk ibu dan anak?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac congue dolor, at scelerisque massa. Aliquam erat volutpat. Phasellus ac mauris porttitor, condimentum nisl eget.' },
+    { question: 'Bagaimana cara menghubungi Rafli.FamilyMart untuk pertanyaan lebih lanjut?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac congue dolor, at scelerisque massa. Aliquam erat volutpat. Phasellus ac mauris porttitor, condimentum nisl eget.' },
+    { question: 'Apakah ada layanan pengembalian atau penukaran produk?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac congue dolor, at scelerisque massa. Aliquam erat volutpat. Phasellus ac mauris porttitor, condimentum nisl eget.' },
+    { question: 'Apakah Rafli.FamilyMart memiliki toko fisik?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac congue dolor, at scelerisque massa. Aliquam erat volutpat. Phasellus ac mauris porttitor, condimentum nisl eget.' },
+    { question: 'Bagaimana cara menjadi mitra Rafli.FamilyMart?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac congue dolor, at scelerisque massa. Aliquam erat volutpat. Phasellus ac mauris porttitor, condimentum nisl eget.' },
+    { question: 'Apakah Rafli.FamilyMart menawarkan promo khusus atau diskon?', answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac congue dolor, at scelerisque massa. Aliquam erat volutpat. Phasellus ac mauris porttitor, condimentum nisl eget.' },
+  ];
   return (
     <section
       id="faq"
@@ -11,7 +25,7 @@ const FAQ = () => {
         </p>
       </div>
       <div className="mb-24">
-
+        <Accordion data={dataFaq} />
       </div>
     </section>
   )

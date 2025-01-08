@@ -124,7 +124,7 @@ const Footer = () => {
                   type="text"
                   name="message"
                   placeholder="Ajukan pertanyaan anda disini"
-                  className="bg-[#33373F] rounded-lg border border-[#576178] w-full lg:w-72 py-2 px-4"
+                  className="bg-[#33373F] rounded-lg border border-[#576178] w-full py-2 px-4"
                 />
                 <button className="bg-[#F6AE00] text-white rounded-lg ml-2 p-3">
                   <PiPaperPlaneRightFill />

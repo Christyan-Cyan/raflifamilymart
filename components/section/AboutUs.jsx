@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <section
       id="about-us"
-      className="grid grid-cols-12 gap-8 px-4 md:px-8 lg:px-16 mt-96 lg:mt-64 scroll-mt-24 lg:scroll-mt-64"
+      className="grid grid-cols-12 gap-8 px-4 md:px-8 lg:px-16 mt-[400px] lg:mt-64 scroll-mt-24 lg:scroll-mt-64"
       >
       <div className="col-span-12 lg:col-span-5">
         <Image

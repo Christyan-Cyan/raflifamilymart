@@ -45,22 +45,22 @@ export default function Testimonial () {
 
       <div className="slider-container mt-16">
         <Slider {...settings}>
-          <div className="px-2 lg:px-8">
+          <div className="px-2">
             <CardTestimonial />
           </div>
-          <div className="px-2 lg:px-8">
+          <div className="px-2">
             <CardTestimonial />
           </div>
-          <div className="px-2 lg:px-8">
+          <div className="px-2">
             <CardTestimonial />
           </div>
-          <div className="px-2 lg:px-8">
+          <div className="px-2">
             <CardTestimonial />
           </div>
-          <div className="px-2 lg:px-8">
+          <div className="px-2">
             <CardTestimonial />
           </div>
-          <div className="px-2 lg:px-8">
+          <div className="px-2">
             <CardTestimonial />
           </div>
         </Slider>
