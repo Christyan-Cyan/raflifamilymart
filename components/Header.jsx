@@ -8,11 +8,11 @@ import { RiSearchLine, RiCustomerService2Fill, RiQuestionLine } from "react-icon
 import { HiOutlineBars3BottomRight, HiOutlineXMark } from "react-icons/hi2";
 
 const socialLinks = [
-  { icon: <SiInstagram />, link: "instagram.com" },
-  { icon: <SiFacebook />, link: "facebook.com" },
-  { icon: <SiTiktok />, link: "tiktok.com" },
-  { icon: <SiShopee />, link: "shopee.com" },
-  { icon: <SiWhatsapp />, link: "whatsapp.com" }
+  { icon: <SiInstagram />, link: "https://www.instagram.com/el_adzani/" },
+  { icon: <SiFacebook />, link: "https://www.facebook.com/el.adzani" },
+  { icon: <SiTiktok />, link: "https://www.tiktok.com/@rafli.familymart" },
+  { icon: <SiShopee />, link: "https://collshp.com/ahmadrafli" },
+  { icon: <SiWhatsapp />, link: "https://wa.me/6287887488113?text=Halo%20Rafli%20Family%20Mart!%20Saya%20ingin%20bertanya%20mengenai%20produk%20dan%20layanan%20yang%20tersedia" }
 ]
 
 const navigation = [
@@ -86,7 +86,7 @@ export default function Header({ secondaryFont }) {
         <div className="hidden lg:flex flex-col border-b border-white border-opacity-20 pb-4">
           <div className="flex gap-6">
             {socialLinks.map((item, index) => (
-              <Link className="flex-row text-xl my-auto" key={index} href={`https://${item.link}`}>
+              <Link className="flex-row text-xl my-auto hover:text-[#F6AE00]" key={index} href={item.link}>
                 {item.icon}
               </Link>
             ))}
@@ -151,11 +151,11 @@ export default function Header({ secondaryFont }) {
                   width={630}
                   height={569}
                   alt="Logo RafliFamily Mart"
-                  className="w-full h-10 md:h-8"
+                  className="w-full h-10"
                 />
               </div>
               <div className="flex flex-col text-xs">
-                <h1 className="font-bold mb-1">RAFLI.FAMILYMART</h1>
+                <h1 className="text-xl font-bold mb-1">RAFLI.FAMILYMART</h1>
                 <p className="max-w-48 md:max-w-none font-light">Kemudahan Belanja, Kenyamanan Keluarga</p>
               </div>
             </div>
@@ -174,19 +174,6 @@ export default function Header({ secondaryFont }) {
                 </li>
               ))}
             </ul>
-            <div className="text-2xl my-auto ml-4">
-              <ul className="flex space-x-4">
-                <li className="hover:text-[#F6AE00] hover:cursor-pointer">
-                  <RiSearchLine />
-                </li>
-                <li className="hover:text-[#F6AE00] hover:cursor-pointer">
-                  <RiCustomerService2Fill />
-                </li>
-                <li className="hover:text-[#F6AE00] hover:cursor-pointer">
-                  <RiQuestionLine />
-                </li>
-              </ul>
-            </div>
           </div>
           <div className="block lg:hidden ml-auto">
             <button

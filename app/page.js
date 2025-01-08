@@ -50,6 +50,56 @@ export default function Home() {
 
       <Contact />
 
+      <section
+        id="support"
+        className="lg:max-w-7xl mx-auto mt-36 px-4 md:px-8 lg:px-16 scroll-mt-24 lg:scroll-mt-64"
+      >
+        <div className="bg-gradient-to-r from-[#161A22] via-[#1A202C] to-[#2D3748] rounded-xl p-12 shadow-lg">
+          <div className="grid grid-cols-12 gap-4 text-center lg:text-left lg:gap-8">
+            <div className="col-span-12 lg:col-span-7 my-auto">
+              <span className="text-xs md:text-base text-[#F6AE00] font-semibold uppercase tracking-[.25em]">Support us</span>
+              <h1 className="text-3xl md:text-4xl font-extrabold mb-4 lg:mb-8 mt-3">
+                Traktir Kopi
+              </h1>
+              <p className="text-sm md:text-lg text-justify lg:text-left font-light text-white mb-8">
+                Traktirin kita kopi yuk! Dengan donasi secangkir kopi, kamu nggak cuma bikin kita semangat terus berkarya,
+                tapi juga jadi bagian dari perjalanan seru ini. Setiap tegukan kopi dari kamu adalah dukungan besar buat ide-ide
+                baru, konten seru, dan energi positif yang terus mengalir. Terima kasih sudah jadi bagian dari cerita ini!
+              </p>
+            </div>
+            <div className="col-span-12 lg:col-span-5 my-auto lg:ml-auto">
+              <Image
+                src="/assets/image/qr-support.png"
+                width={300}
+                height={300}
+                alt="QR Support"
+                className="bg-[#161A22] m-auto rounded-xl p-6 shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/*<div className="grid grid-cols-12 gap-4 text-center lg:text-left lg:gap-8">*/}
+        {/*  <div className="col-span-12 lg:col-span-7">*/}
+        {/*    <span className="text-xs md:text-base text-[#F6AE00] font-bold uppercase tracking-[.25em]">Support us</span>*/}
+        {/*    <h1 className="text-2xl md:text-3xl font-bold mb-4 lg:mb-8 mt-3">Traktir kopi</h1>*/}
+        {/*    <p className="text-sm md:text-lg text-justify lg:text-left font-light mb-8">*/}
+        {/*      Traktirin kita kopi yuk! Dengan donasi secangkir kopi, kamu nggak cuma bikin kita semangat terus berkarya, tapi juga jadi bagian dari perjalanan seru ini. Setiap tegukan kopi dari kamu adalah dukungan besar buat ide-ide baru, konten seru, dan energi positif yang terus mengalir.*/}
+        {/*      Terima kasih sudah jadi bagian dari cerita ini!*/}
+        {/*    </p>*/}
+        {/*  </div>*/}
+        {/*  <div className="col-span-12 lg:col-span-5 my-auto ml-auto">*/}
+        {/*    <Image*/}
+        {/*      src="/assets/image/qr-support.png"*/}
+        {/*      width={280}*/}
+        {/*      height={280}*/}
+        {/*      alt="QR support"*/}
+        {/*      className="bg-[#161A22] m-auto rounded-xl p-8"*/}
+        {/*    />*/}
+        {/*  </div>*/}
+        {/*</div>*/}
+      </section>
+
       <FAQ />
 
     </>

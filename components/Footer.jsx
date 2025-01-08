@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Form from "next/form";
@@ -6,12 +9,11 @@ import { SiInstagram, SiFacebook, SiTiktok, SiShopee, SiWhatsapp, SiYoutube } fr
 import { PiPaperPlaneRightFill } from "react-icons/pi";
 
 const socialLinksFooter = [
-  { icon: <SiInstagram />, url: "https://www.instagram.com" },
-  { icon: <SiTiktok />, url: "https://www.tiktok.com" },
-  { icon: <SiFacebook />, url: "https://www.facebook.com" },
-  { icon: <SiWhatsapp />, url: "https://www.whatsapp.com" },
-  { icon: <SiShopee />, url: "https://www.shopee.com" },
-  { icon: <SiYoutube />, url: "https://www.youtube.com" }
+  { icon: <SiInstagram />, url: "https://www.instagram.com/el_adzani/"},
+  { icon: <SiTiktok />, url: "https://www.tiktok.com/@rafli.familymart" },
+  { icon: <SiFacebook />, url: "https://www.facebook.com/el.adzani" },
+  { icon: <SiWhatsapp />, url: "https://wa.me/6287887488113?text=Halo%20Rafli%20Family%20Mart!%20Saya%20ingin%20bertanya%20mengenai%20produk%20dan%20layanan%20yang%20tersedia" },
+  { icon: <SiShopee />, url: "https://collshp.com/ahmadrafli" }
 ]
 
 const navigation = [
@@ -29,6 +31,14 @@ const help = [
 ]
 
 const Footer = () => {
+  const [message, setMessage] = useState("");
+  const subject = "Tanya mas el kuy"
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    window.location.href = `mailto:raflifamilymart@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+  }
+
   return (
     <footer className='bg-[#161A22] py-8 px-4 md:px-8 lg:px-16'>
 
@@ -102,92 +112,28 @@ const Footer = () => {
 
         </div>
 
-        <div className="flex flex-row gap-12">
-
-          <div className="flex flex-col">
-            <h1 className='text-lg md:text-xl font-bold uppercase mb-3 lg:mb-5'>Bantuan</h1>
-            <div className="">
-              <Image
-                src="/assets/image/qr-support.png"
-                width={120}
-                height={120}
-                alt="QR Support"
+        <div className="flex flex-col">
+          <h1 className='text-lg md:text-xl font-bold uppercase mb-3 lg:mb-5'>Hubungi via email</h1>
+          <Form onSubmit={handleSubmit}>
+            <div className="flex flex-row">
+              <input
+                type="text"
+                name="message"
+                placeholder="Ajukan pertanyaan anda disini"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                className="bg-[#33373F] rounded-lg border border-[#576178] w-full py-2 px-4"
               />
+              <button
+                className="bg-[#F6AE00] text-white rounded-lg ml-2 p-3"
+                type="submit"
+              >
+                <PiPaperPlaneRightFill />
+              </button>
             </div>
-          </div>
-
-          <div className="flex flex-col">
-            <h1 className='text-lg md:text-xl font-bold uppercase mb-3 lg:mb-5'>Hubungi via email</h1>
-            <Form action=''>
-              <div className="flex flex-row">
-                <input
-                  type="text"
-                  name="message"
-                  placeholder="Ajukan pertanyaan anda disini"
-                  className="bg-[#33373F] rounded-lg border border-[#576178] w-full py-2 px-4"
-                />
-                <button className="bg-[#F6AE00] text-white rounded-lg ml-2 p-3">
-                  <PiPaperPlaneRightFill />
-                </button>
-              </div>
-            </Form>
-          </div>
-
+          </Form>
         </div>
-
       </div>
-
-      {/*<div className='grid grid-cols-8 gap-4 lg:gap-16'>*/}
-      {/*  <div className='col-span-8 lg:col-span-3'>*/}
-      {/*    <div className="flex flex-row">*/}
-      {/*      <Link className="my-auto" href="/">*/}
-      {/*        <div className="flex flex-row gap-3">*/}
-      {/*          <div className="my-auto">*/}
-      {/*            <Image*/}
-      {/*              src="/assets/image/logo/logo-rfm.png"*/}
-      {/*              width={630}*/}
-      {/*              height={569}*/}
-      {/*              alt="Logo RafliFamily Mart"*/}
-      {/*              className="w-full h-16"*/}
-      {/*            />*/}
-      {/*          </div>*/}
-      {/*          <div className="flex flex-col">*/}
-      {/*            <h1 className="text-2xl font-bold mb-1">RAFLI.FAMILYMART</h1>*/}
-      {/*            <p className="max-w-48 md:max-w-none text-xs font-light">Kemudahan Belanja, Kenyamanan Keluarga</p>*/}
-      {/*          </div>*/}
-      {/*        </div>*/}
-      {/*      </Link>*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*  <div className='col-span-8 md:col-span-4 lg:col-span-1'>*/}
-      {/*    <h1 className='text-lg md:text-xl font-bold mb-3 lg:mb-5'>NAVIGASI</h1>*/}
-      {/*    <div className='flex flex-col gap-1.5'>*/}
-      {/*      {navigation.map((item, index) => (*/}
-      {/*        <a className='text-base text-white hover:text-[#F6AE00]' href={item.link} key={index}>{item.label}</a>*/}
-      {/*      ))}*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*  <div className='col-span-8 md:col-span-4 lg:col-span-1'>*/}
-      {/*    <h1 className='text-lg md:text-xl font-bold mb-3 lg:mb-5'>BANTUAN</h1>*/}
-      {/*    <div className='flex flex-col gap-1.5'>*/}
-      {/*      {help.map((item, index) => (*/}
-      {/*        <a className='text-base text-white hover:text-[#F6AE00]' href={item.link} key={index}>{item.label}</a>*/}
-      {/*      ))}*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*  <div className='col-span-8 md:col-span-4 lg:col-span-1'>*/}
-      {/*    <h1 className='text-lg md:text-xl font-bold mb-3 lg:mb-5'>SUPPORT</h1>*/}
-      {/*    <Image*/}
-      {/*      src='/assets/images/qr-support.png'*/}
-      {/*      width={142}*/}
-      {/*      height={142}*/}
-      {/*      alt='QR Support'*/}
-      {/*    />*/}
-      {/*  </div>*/}
-      {/*  <div className='col-span-8 md:col-span-4 lg:col-span-2'>*/}
-      {/*    <h1 className='text-lg md:text-xl font-bold mb-3 lg:mb-5'>HUBUNGI VIA EMAIL</h1>*/}
-      {/*  </div>*/}
-      {/*</div>*/}
 
       <div className='border border-[#5a5a5a] my-4'></div>
       <div className='flex flex-col lg:flex-row text-sm'>

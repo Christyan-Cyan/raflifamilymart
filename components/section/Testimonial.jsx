@@ -21,12 +21,12 @@ const userTestimonial = [
   {
     name: "Sri Handayani",
     review: "Rafli.FamilyMart adalah pilihan terbaik untuk kebutuhan rumah tangga saya. Saya bisa mencari berbagai barang elektronik dan perlengkapan rumah tangga dengan harga bersaing. Pengalaman belanja yang mudah dan lancar membuat saya terus kembali membeli disini lagi.",
-    rating: 4,
+    rating: 3,
   },
   {
     name: "Meilinda Rizkyanti Sari",
     review: "Saya sangat senang berbelanja di Rafli.Family Mart, Produk mainan, susu bayi dan perlengkapan anak-anak yang tersedia sangat membantu perkembangan si kecil. Pengirimannya cepat dan barang selalu sesuai dengan deskripsi. Saya merasa aman dan nyaman setiap belanja di sini. Recommended banget deh pokoknya!",
-    rating: 4,
+    rating: 3,
   },
   {
     name: "Wulan Eka Novita Sari",
@@ -36,7 +36,7 @@ const userTestimonial = [
   {
     name: "Haris Purwanto",
     review: "Saya sangat terkesan dengan pilihan produk di RafliFamily Mart. Semua barang yang saya beli selalu berkualitas dan sesuai harapan. Ditambah lagi, sering ada promo menarik yang membuat belanja jadi lebih hemat. Terima kasih Rafli.FamilyMart. Sukses dan Jaya selalu!",
-    rating: 4,
+    rating: 3,
   }
 ]
 
